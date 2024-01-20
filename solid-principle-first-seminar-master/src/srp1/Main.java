@@ -1,0 +1,15 @@
+package srp1;
+
+import srp1.figure.SquarePainter;
+import srp1.figure.Point;
+import srp1.figure.Square;
+
+public class Main {
+    public static void main(String[] args) {
+        Square square = new Square(new Point(5,5), 4 );
+        System.out.printf("Square area: %d \n", square.getArea());
+        SquarePainter painter = new SquarePainter();
+        painter.draw(square);
+
+    }
+}
